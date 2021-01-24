@@ -26,6 +26,7 @@ puts "++++++++++++++++++++"
 # start with your number
 # length = n - 1 
 # while n is greater than 1
+# each would have worked here.  I wanted to play a bit with the map method not sure what the value of map over each in this problem.
 [5,6,7,8].map do |n|
   factorial = n
   loop do 
@@ -36,6 +37,13 @@ puts "++++++++++++++++++++"
   puts factorial
 end
 
+puts '++++++++++++++++++++++++++'
 
 # write a program that calculates the squares of 3 floats and outputs the result
 # 3.2, 3.3, 4.0
+puts [3.2,3.3,4.0].map { |f| f * f }
+
+# what does the following tell you?
+# SyntaxError: (irb):2: syntax error, unexpected ')', expecting '}'
+# from /usr/local/rvm/rubies/ruby-2.5.3/bin/irb:16:in `<main>'
+# There is an open bracket somewhere.
