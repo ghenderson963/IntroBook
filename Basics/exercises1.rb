@@ -15,3 +15,25 @@ hsh = {1981 =>'bladerunner', 1978 => 'animal house',2000 => 'tango and cash'}
 puts hsh.keys
 
 # store the dates above in an array and create the same output
+arr = hsh.keys
+puts "================="
+puts arr
+puts "++++++++++++++++++++"
+
+# Write a program that outputs the factorials of the numbers 5,6,7,8
+# 5 * 4 * 3 * 2 * 1 = 120 
+# n x (n - 1) * (n - 2) * (n - 3)
+# start with your number
+# length = n - 1 
+# while n is greater than 1
+[5,6,7,8].map do |n|
+  factorial = n
+  loop do 
+      factorial = factorial *  (n - 1)
+      n -= 1
+      break if n == 1
+  end
+  puts factorial
+end
+
+# [5,6,7,8]
