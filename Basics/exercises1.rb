@@ -29,11 +29,13 @@ puts "++++++++++++++++++++"
 [5,6,7,8].map do |n|
   factorial = n
   loop do 
-      factorial = factorial *  (n - 1)
-      n -= 1
-      break if n == 1
+    break factorial if n == 1
+    factorial = factorial *  (n - 1)
+    n -= 1
   end
   puts factorial
 end
 
-# [5,6,7,8]
+
+# write a program that calculates the squares of 3 floats and outputs the result
+# 3.2, 3.3, 4.0
